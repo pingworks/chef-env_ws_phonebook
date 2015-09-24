@@ -1,0 +1,10 @@
+name             'ws-env-phonebook'
+maintainer       'Christoph Lukas'
+maintainer_email 'christoph.lukas@gmx.net'
+license          'All rights reserved'
+description      'Installs/Configures phonebook test environment'
+long_description 'Installs/Configures phonebook test environment'
+version          '0.1.0'
+
+depends 'ws-base'
+depends 'ws-phonebook'

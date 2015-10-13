@@ -6,5 +6,5 @@ description      'Installs/Configures phonebook test environment'
 long_description 'Installs/Configures phonebook test environment'
 version          '0.1.0'
 
-depends 'ws-base'
+depends 'pw_base'
 depends 'ws-phonebook'

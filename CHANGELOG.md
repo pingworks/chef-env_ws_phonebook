@@ -1,3 +1,3 @@
 # 0.1.0
 
-Initial release of ws-env-phonebook
+Initial release of env_ws_phonebook

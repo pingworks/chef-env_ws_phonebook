@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ws-env-phonebook
+# Cookbook Name:: env_ws_phonebook
 # Recipe:: default
 #
 # Copyright (C) 2015 YOUR_NAME

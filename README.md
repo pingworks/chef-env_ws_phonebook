@@ -1,4 +1,4 @@
-# ws-env-phonebook-cookbook
+# env_ws_phonebook-cookbook
 
 Installs/Configures phonebook test environment
 
@@ -16,7 +16,7 @@ Ubuntu 14.04
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['ws-env-phonebook']['bacon']</tt></td>
+    <td><tt>['env_ws_phonebook']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -25,14 +25,14 @@ Ubuntu 14.04
 
 ## Usage
 
-### ws-env-phonebook::default
+### env_ws_phonebook::default
 
-Include `ws-env-phonebook` in your node's `run_list`:
+Include `env_ws_phonebook` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[ws-env-phonebook::default]"
+    "recipe[env_ws_phonebook::default]"
   ]
 }
 ```

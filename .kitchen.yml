@@ -3,13 +3,27 @@ driver:
   name: vagrant
 
 provisioner:
-  name: chef_solo
+  name: chef_zero
+  require_chef_omnibus: 12.4.1
 
 platforms:
-  - name: ubuntu-12.04
-  - name: centos-6.4
+  - name: ubuntu-14.04
+    driver:
+      box: trusty-server-cloudimg-amd64-vagrant-disk1
+      box_url: https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
 
 suites:
-  - name: default
+  - name: frontend
     run_list:
+      - recipe[env_ws_phonebook::frontend]
     attributes:
+    driver:
+      network:
+        - [ 'private_network', { ip: '192.168.88.100' } ]
+  - name: backend
+    run_list:
+      - recipe[env_ws_phonebook::backend]
+    attributes:
+    driver:
+      network:
+        - [ 'private_network', { ip: '192.168.88.200' } ]
